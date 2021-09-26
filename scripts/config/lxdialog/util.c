@@ -536,7 +536,7 @@ int first_alpha(const char *string, const char *exempt)
 }
 
 /*
- * ncurses uses ESC to detect escaped char sequences. This resutl in
+ * ncurses uses ESC to detect escaped char sequences. This results in
  * a small timeout before ESC is actually delivered to the application.
  * lxdialog suggest <ESC> <ESC> which is correctly translated to two
  * times esc. But then we need to ignore the second esc to avoid stepping
