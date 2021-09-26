@@ -207,7 +207,7 @@ class GitHubCommitTsCache(object):
 
 
 class DownloadGitHubTarball(object):
-    """Download and repack archive tarabll from GitHub.
+    """Download and repack archive tarball from GitHub.
 
     Compared with the method of packing after cloning the whole repo, this
     method is more friendly to users with fragile internet connection.
