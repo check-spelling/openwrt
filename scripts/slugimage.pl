@@ -971,7 +971,7 @@ if (!GetOptions("d|debug"       => \$debug,
     print "  [-b|--redboot]   <file>		Input/Output RedBoot filename\n";
     print "  [-s|--sysconf]   <file>		Input/Output SysConf filename\n";
     print "  [-L|--loader]    <file>		Second stage boot loader filename\n";
-    print "  [-k|--kernel]    <file>		Input/Ouptut Kernel filename\n";
+    print "  [-k|--kernel]    <file>		Input/Output Kernel filename\n";
     print "  [-r|--ramdisk]   <file>		Input/Output Ramdisk filename(s)\n";
     print "  [-f|--fisdir]    <file>		Input/Output FIS directory filename\n";
     print "  [-m|--microcode] <file>		Input/Output Microcode filename\n";
