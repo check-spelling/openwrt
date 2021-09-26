@@ -309,7 +309,7 @@ int init_dialog(const char *backtitle)
 	getyx(stdscr, saved_y, saved_x);
 
 	getmaxyx(stdscr, height, width);
-	if (height < WINDOW_HEIGTH_MIN || width < WINDOW_WIDTH_MIN) {
+	if (height < WINDOW_HEIGHT_MIN || width < WINDOW_WIDTH_MIN) {
 		endwin();
 		return -ERRDISPLAYTOOSMALL;
 	}
@@ -363,7 +363,7 @@ void print_title(WINDOW *dialog, const char *title, int width)
 /*
  * Print a string of text in a window, automatically wrap around to the
  * next line if the string is too long to fit on one line. Newline
- * characters '\n' are propperly processed.  We start on a new line
+ * characters '\n' are properly processed.  We start on a new line
  * if there is no room for at least 4 nonblanks following a double-space.
  */
 void print_autowrap(WINDOW * win, const char *prompt, int width, int y, int x)
@@ -536,7 +536,7 @@ int first_alpha(const char *string, const char *exempt)
 }
 
 /*
- * ncurses uses ESC to detect escaped char sequences. This resutl in
+ * ncurses uses ESC to detect escaped char sequences. This results in
  * a small timeout before ESC is actually delivered to the application.
  * lxdialog suggest <ESC> <ESC> which is correctly translated to two
  * times esc. But then we need to ignore the second esc to avoid stepping

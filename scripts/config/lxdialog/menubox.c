@@ -180,7 +180,7 @@ int dialog_menu(const char *title, const char *prompt,
 do_resize:
 	height = getmaxy(stdscr);
 	width = getmaxx(stdscr);
-	if (height < MENUBOX_HEIGTH_MIN || width < MENUBOX_WIDTH_MIN)
+	if (height < MENUBOX_HEIGHT_MIN || width < MENUBOX_WIDTH_MIN)
 		return -ERRDISPLAYTOOSMALL;
 
 	height -= 4;
@@ -295,7 +295,7 @@ do_resize:
 		     key == KEY_UP || key == KEY_DOWN ||
 		     key == '-' || key == '+' ||
 		     key == KEY_PPAGE || key == KEY_NPAGE)) {
-			/* Remove highligt of current item */
+			/* Remove highlight of current item */
 			print_item(scroll + choice, choice, FALSE);
 
 			if (key == KEY_UP || key == '-') {

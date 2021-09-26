@@ -395,7 +395,7 @@ static void handle_f1(int *key, struct menu *current_item)
 	return;
 }
 
-/* symbole help */
+/* symbol help */
 static void handle_f2(int *key, struct menu *current_item)
 {
 	show_help(current_item);

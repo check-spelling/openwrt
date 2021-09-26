@@ -157,7 +157,7 @@ struct dialog_item {
 	int selected;	/* Set to 1 by dialog_*() function if selected. */
 };
 
-/* list of lialog_items */
+/* list of dialog_items */
 struct dialog_list {
 	struct dialog_item node;
 	struct dialog_list *next;
@@ -182,17 +182,17 @@ int on_key_esc(WINDOW *win);
 int on_key_resize(void);
 
 /* minimum (re)size values */
-#define CHECKLIST_HEIGTH_MIN 6	/* For dialog_checklist() */
+#define CHECKLIST_HEIGHT_MIN 6	/* For dialog_checklist() */
 #define CHECKLIST_WIDTH_MIN 6
-#define INPUTBOX_HEIGTH_MIN 2	/* For dialog_inputbox() */
+#define INPUTBOX_HEIGHT_MIN 2	/* For dialog_inputbox() */
 #define INPUTBOX_WIDTH_MIN 2
-#define MENUBOX_HEIGTH_MIN 15	/* For dialog_menu() */
+#define MENUBOX_HEIGHT_MIN 15	/* For dialog_menu() */
 #define MENUBOX_WIDTH_MIN 65
-#define TEXTBOX_HEIGTH_MIN 8	/* For dialog_textbox() */
+#define TEXTBOX_HEIGHT_MIN 8	/* For dialog_textbox() */
 #define TEXTBOX_WIDTH_MIN 8
-#define YESNO_HEIGTH_MIN 4	/* For dialog_yesno() */
+#define YESNO_HEIGHT_MIN 4	/* For dialog_yesno() */
 #define YESNO_WIDTH_MIN 4
-#define WINDOW_HEIGTH_MIN 19	/* For init_dialog() */
+#define WINDOW_HEIGHT_MIN 19	/* For init_dialog() */
 #define WINDOW_WIDTH_MIN 80
 
 int init_dialog(const char *backtitle);

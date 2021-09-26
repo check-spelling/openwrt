@@ -26,7 +26,7 @@ static void print_buttons(WINDOW * dialog, int height, int width, int selected)
 }
 
 /*
- * Display a dialog box for inputing a string
+ * Display a dialog box for inputting a string
  */
 int dialog_inputbox(const char *title, const char *prompt, int height, int width,
 		    const char *init)
@@ -43,7 +43,7 @@ int dialog_inputbox(const char *title, const char *prompt, int height, int width
 		strcpy(instr, init);
 
 do_resize:
-	if (getmaxy(stdscr) <= (height - INPUTBOX_HEIGTH_MIN))
+	if (getmaxy(stdscr) <= (height - INPUTBOX_HEIGHT_MIN))
 		return -ERRDISPLAYTOOSMALL;
 	if (getmaxx(stdscr) <= (width - INPUTBOX_WIDTH_MIN))
 		return -ERRDISPLAYTOOSMALL;
