@@ -772,7 +772,7 @@ sub writeOutFirmware {
 				 $_->{'name'}, $filename);
 	    }
 
-	    # If the next parition is before the end of the current image, then rewind.
+	    # If the next partition is before the end of the current image, then rewind.
 	    elsif ($_->{'offset'} < $end_point) {
 		$debug and printf("Rewound %s before <%s> in \"%s\"\n",
 				  (($end_point - $_->{'offset'}) >= $block_size ?
