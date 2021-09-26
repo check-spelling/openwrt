@@ -116,7 +116,7 @@ public:
 	enum optionMode optMode;
 	struct menu *rootEntry;
 	QPalette disabledColorGroup;
-	QPalette inactivedColorGroup;
+	QPalette unusedInactiveColorGroup;
 	QMenu* headerPopup;
 };
 
